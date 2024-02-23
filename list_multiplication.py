@@ -10,13 +10,15 @@ b = [4,4,2]
 
 def list_multiply_while(a,b):
     i = 0
-    total = []
-    while i <= len(a):
-    total [i] = a[i] * b[i]
-    return total 
+    product = []
+    while i < len(a):
+        product.append(a[i] * b[i])
+        i += 1
+    return product 
 
 def main():
-    list_multiply_while(a,b)
+
+    print(list_multiply_while(a,b))
 
 if __name__ == "__main__":
     main()
