@@ -16,9 +16,30 @@ def list_multiply_while(a,b):
         i += 1
     return product 
 
+def list_multiply_for(a,b):
+    product = []
+    for i in range(len(a)):
+        product.append(a[i] * b[i])
+    return product
+
+def list_multiply_foreach(a,b):
+    product = []
+    i = 0
+    for num in a:
+        product.append(num * b[i])
+        i += 1
+    return product
+
+
+
 def main():
 
     print(list_multiply_while(a,b))
+    print(list_multiply_for(a,b))
+    print(list_multiply_foreach(a,b))
+
+
+
 
 if __name__ == "__main__":
     main()
